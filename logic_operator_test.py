@@ -18,3 +18,9 @@ print(st)
 print("a大于b") if a > b else print("a不大于b")
 c = 5
 print('c大于a') if c > a else print('c小于a') if c < a else print('c等于a')
+
+s = 'crazyit.org'
+print('it' in s)
+print('it' not in s)
+print('fff' in s)
+print('fff' not in s)
