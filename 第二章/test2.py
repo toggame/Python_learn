@@ -18,3 +18,14 @@ print(ct)
 print('二进制：%s' % bin(a))
 print('十六进制：%s' % hex(a))  # 会带出0x
 print('十六进制：%x' % a)  # 不会带出0x，可自行在文本中添加
+
+st = input('请输入字符串：')
+num = input('请输入需替换的索引号：')
+cha = input('请输入替换字符：')
+if int(num) < len(st):
+    st_c = st.replace(st[int(num)], cha)  # 会将所有相同字符替换，不可行
+    print(st_c)
+    st_c = st[:int(num)] + cha + st[int(num) + 1:]  # 注意end项不会包含
+    print(st_c)
+else:
+    print('索引号超出范围')
