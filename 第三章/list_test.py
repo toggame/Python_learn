@@ -79,6 +79,7 @@ a_list[2] = 'f_kit'
 print(a_list)  # [2, 4, 'f_kit', 'crazy_it', 23] 列表可以对元素进行赋值，但元组不可以
 a_list[-2] = 9527
 print(a_list)  # [2, 4, 'f_kit', 9527, 23]
+a_list[6] = 2  # IndexError: list assignment index out of range 不能对不存在的索引赋值
 
 b_list = list(range(1, 5))
 print(b_list)  # [1, 2, 3, 4]
