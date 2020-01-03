@@ -33,7 +33,7 @@ def four_to_han_str(num_str):
         # 当连续2个0时，推后输出
         elif i < num_len - 1 and num_str[i] == num_str[i + 1] == '0':
             continue
-        # 最后一位时，仅输出汉字，不添加单位
+        # 最后一位或非最后一位0时，仅输出汉字，不添加单位
         else:
             result += han_list[num]
     return result
